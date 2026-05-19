@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --bg: #021910;
+  --bg-soft: #03251a;
+  --card: #052f22;
+  --card-strong: #063828;
+  --border: #0d4a36;
+  --ring: #1f6b4f;
+  --fg: #d1fae5;
+  --muted: #6cb89a;
+  --accent: #6ee7b7;
+  --accent-2: #a7f3d0;
+  --accent-soft: rgba(110, 231, 183, 0.12);
+  --accent-fg: #022c1f;
+  --gain: #bbf7d0;
+  --loss: #4c7d68;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 20%, #063828 0, transparent 45%),
+    radial-gradient(circle at 80% 0%, #0b5138 0, transparent 42%),
+    linear-gradient(180deg, var(--bg-soft), var(--bg));
+  color: var(--fg);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+}
+
+/* Keep RainbowKit trigger aligned with the green chrome */
+[data-rk] button {
+  border-radius: 0.85rem !important;
+  border: 1px solid var(--border) !important;
+  background: linear-gradient(135deg, #052f22, #063828) !important;
+  color: var(--fg) !important;
+  box-shadow: 0 14px 40px -22px rgba(0, 60, 30, 0.9) !important;
+}
+
+[data-rk] button:hover {
+  border-color: var(--ring) !important;
+}
