@@ -51,4 +51,3 @@ Ensure `NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID` is set in your host’s environmen
 ## License
 
 MIT
->>>>>>> 1b8cc55 (Add NGX synthetic desk on Arc Testnet)
